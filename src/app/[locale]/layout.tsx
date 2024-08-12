@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 import { Barlow_Semi_Condensed } from 'next/font/google';
 import initTranslations from '../i18n';
 import './globals.css';
+import { ThemeProvider } from '@/_providers/theme-provider';
+import Navbar from '@/components/shared/navbar';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 const barlow = Barlow_Semi_Condensed({
   subsets: ['latin'],
@@ -33,7 +36,17 @@ export default async function RootLayout({
           locale={locale}
           resources={resources}
         >
-          {children}
+          <ThemeProvider
+            attribute='class'
+            defaultTheme='system'
+            enableSystem
+            disableTransitionOnChange
+          >
+            <TooltipProvider delayDuration={0}>
+              <main>{children}</main>
+              <Navbar />
+            </TooltipProvider>
+          </ThemeProvider>
         </TranslationsProvider>
       </body>
     </html>
