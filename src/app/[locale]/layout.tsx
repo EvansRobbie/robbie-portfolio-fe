@@ -29,7 +29,7 @@ export default async function RootLayout({
 }>) {
   const { resources } = await initTranslations(locale, namespaces);
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={barlow.className}>
         <TranslationsProvider
           namespaces={namespaces}
