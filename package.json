@@ -28,8 +28,10 @@
     "react-animated-cursor": "^2.11.2",
     "react-dom": "^18",
     "react-i18next": "^15.0.1",
+    "react-tsparticles": "^2.12.2",
     "tailwind-merge": "^2.5.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tsparticles": "^3.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",
