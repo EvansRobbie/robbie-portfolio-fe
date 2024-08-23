@@ -9,33 +9,33 @@ export const DATA = {
     { href: '#contact', icon: PencilLine, label: 'Contact' },
  ],
  contact: {
-    email: 'hello@example.com',
-    tel: '+301456789',
+    email: 'evansrobbie5311@gmail.com',
+    tel: '+254704563123',
     social: {
        GitHub: {
           name: 'GitHub',
-          url: 'https://nyxb.link/github',
+          url: 'https://github.com/EvansRobbie',
           icon: Icons.github,
 
           navbar: true,
        },
        LinkedIn: {
           name: 'LinkedIn',
-          url: 'https://nyxb.link/linkedin',
+          url: 'https://www.linkedin.com/in/evansrobbymacharia/',
           icon: Icons.linkedin,
 
           navbar: true,
        },
        X: {
           name: 'X',
-          url: 'https://nyxb.link/x',
+          url: 'https://x.com/e_robbievans',
           icon: Icons.x,
 
           navbar: true,
        },
        Youtube: {
-          name: 'Youtube',
-          url: 'https://nyxb.link/yt',
+          name: 'Instagram',
+          url: 'https://www.instagram.com/r.o.b.b.i.e_vans/',
           icon: Icons.youtube,
           navbar: true,
        },
