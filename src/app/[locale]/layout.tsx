@@ -6,6 +6,7 @@ import './globals.css';
 import { ThemeProvider } from '@/_providers/theme-provider';
 import Navbar from '@/components/shared/navbar';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import AnimatedCursor from "react-animated-cursor"
 
 const barlow = Barlow_Semi_Condensed({
   subsets: ['latin'],
@@ -42,6 +43,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <AnimatedCursor />
             <TooltipProvider delayDuration={0}>
               <main>{children}</main>
               <Navbar />
