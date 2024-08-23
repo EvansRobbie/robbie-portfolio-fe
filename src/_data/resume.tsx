@@ -9,8 +9,8 @@ export const DATA = {
     { href: '#contact', icon: PencilLine, label: 'Contact' },
  ],
  contact: {
-    email: 'hello@example.com',
-    tel: '+301456789',
+    email: 'evansrobbie5311@gmail.com',
+    tel: '+254704563123',
     social: {
        GitHub: {
           name: 'GitHub',
