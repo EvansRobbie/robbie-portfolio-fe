@@ -47,7 +47,9 @@ export default async function RootLayout({
             <AnimatedCursor />
             <TooltipProvider delayDuration={0}>
               <PageAnimatePresence>
-                <main className='min-h-screen'>{children}</main>
+                <main className='min-h-screen h-full  w-full absolute top-0 -z-10 py-8'>
+                <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
+                  {children}</main>
               </PageAnimatePresence>
               <Navbar />
             </TooltipProvider>

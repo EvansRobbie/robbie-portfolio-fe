@@ -4,7 +4,7 @@ import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from 'lucide-react'
 export const DATA = {
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
-    { href: '/blog', icon: NotebookIcon, label: 'Blog' },
+    { href: '/blogs', icon: NotebookIcon, label: 'Blog' },
     { href: '#projects', icon: CodeIcon, label: 'Projects' },
     { href: '#contact', icon: PencilLine, label: 'Contact' },
  ],

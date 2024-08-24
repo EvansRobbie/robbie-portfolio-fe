@@ -67,7 +67,7 @@ export const TextRevealCard = ({
       onTouchMove={touchMoveHandler}
       ref={cardRef}
       className={cn(
-        "bg-primary/80 dark:bg-[#1d1c20] w-full  border border-white/[0.08]  rounded-lg pl-4  relative overflow-hidden",
+        "bg-primary/80 dark:bg-[#1d1c20] w-full  border border-white/[0.08]  rounded-lg   relative overflow-hidden",
         className
       )}
     >
@@ -95,7 +95,7 @@ export const TextRevealCard = ({
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}
-            className="text-base sm:text-[3rem] py-10 font-bold text-white bg-clip-text text-transparent dark:bg-gradient-to-b pl-2 from-white to-neutral-300"
+            className="text-base sm:text-[3rem] py-10 font-bold text-white bg-clip-text text-center text-transparent dark:bg-gradient-to-b pl-2 from-white to-neutral-300"
           >
             {revealText}
           </p>

@@ -19,7 +19,7 @@ export default async function Home({
 }) {
   const { t } = await initTranslations(locale, ['hello']);
   return (
-    <div className='h-full  w-full absolute top-0 -z-10 py-8'>
+    <>
       <div className='px-10 h-full'>
         <div className='w-full flex justify-between items-center'>
           <div className='flex items-center gap-4'>
@@ -74,7 +74,6 @@ export default async function Home({
           </div>
         </div>
       </div>
-      <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
-    </div>
+    </>
   );
 }
