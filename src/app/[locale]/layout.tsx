@@ -8,6 +8,8 @@ import Navbar from '@/components/shared/navbar';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import AnimatedCursor from 'react-animated-cursor';
 import PageAnimatePresence from '@/components/hoc/page-animated-presence';
+import BackroundParticles from '@/components/ui/particles';
+import { largeParticles, smallParticles } from '@/_data/particle-options';
 
 const barlow = Barlow_Semi_Condensed({
   subsets: ['latin'],
@@ -48,8 +50,10 @@ export default async function RootLayout({
             <TooltipProvider delayDuration={0}>
               <PageAnimatePresence>
                 <main className='min-h-screen h-full  w-full absolute top-0 -z-10 py-8'>
-                <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
-                  {children}</main>
+                  <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
+                  <BackroundParticles options={largeParticles} />
+                  {children}
+                </main>
               </PageAnimatePresence>
               <Navbar />
             </TooltipProvider>
