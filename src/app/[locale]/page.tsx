@@ -16,6 +16,8 @@ import { DATA } from '@/_data/resume';
 import BackroundParticles from '@/components/ui/particles';
 import { largeParticles } from '@/_data/particle-options';
 import CustomButton from '@/components/shared/download-button';
+import { Badge } from '@/components/ui/badge';
+import { IconCloudComponent } from '@/components/techstack/icon-cloud';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -77,7 +79,7 @@ export default async function Home({
                 delay={BLUR_FADE_DELAY * 0.5}
                 text={`I am a Frontend Developer dedicated to building exceptional digital experiences. My focus is on creating responsive and dynamic frontend applications that deliver seamless and engaging user interactions.`}
               />
-              <CustomButton/>
+              <CustomButton />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 0.6}>
               <Avatar className='size-28 border'>
@@ -91,7 +93,7 @@ export default async function Home({
       {/* about me */}
       <div className='relative'>
         <section className='px-10 relative max-w-3xl mx-auto'>
-        {/* <BackroundParticles options={largeParticles} /> */}
+          {/* <BackroundParticles options={largeParticles} /> */}
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
             <BlurFadeText
               className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl'
@@ -172,6 +174,48 @@ export default async function Home({
                 />
               </BlurFade>
             ))}
+          </div>
+        </section>
+        <section className='mx-auto px-10 py-16 max-w-3xl' id='techstack'>
+          <div className='flex min-h-0 flex-col gap-y-3'>
+            <BlurFade delay={BLUR_FADE_DELAY * 7}>
+              <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
+                Tech Stack
+              </h2>
+            </BlurFade>
+            <div className='grid grid-cols-2 justify-between'>
+              <div className='flex flex-col gap-y-3'>
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <h2 className='text-xl font-bold'>Mostly Used</h2>
+              </BlurFade>
+              <div className='flex flex-wrap gap-1'>
+                {DATA.skills.mostlyUsed.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge key={skill}>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+              </div>
+              <div className='flex flex-col gap-y-3'>
+              <BlurFade delay={BLUR_FADE_DELAY * 11}>
+                <h2 className='text-xl font-bold'>Others</h2>
+              </BlurFade>
+              <div className='flex flex-wrap gap-1'>
+                {DATA.skills.other.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                  >
+                    <Badge key={skill}>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+              </div>
+            </div>
+            <IconCloudComponent/>
           </div>
         </section>
       </div>
