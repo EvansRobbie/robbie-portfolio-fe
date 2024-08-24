@@ -76,7 +76,7 @@ export const DATA = {
   education: [
     {
       school: 'Modcom Institute of Technology',
-      href: 'https://www.udacity.com/?promo=year_end&coupon=JULY4&utm_source=gsem_brand&utm_medium=ads_r&utm_campaign=12907755074_c_individuals&utm_term=124133496400&utm_keyword=udacity_e&gad_source=1',
+      href: 'https://modcom.co.ke/',
       degree: 'Certification in Softaware Development',
       logoUrl: '/udacity.png',
       start: '2020',
