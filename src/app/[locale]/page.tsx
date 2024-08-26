@@ -18,6 +18,8 @@ import { largeParticles } from '@/_data/particle-options';
 import CustomButton from '@/components/shared/download-button';
 import { Badge } from '@/components/ui/badge';
 import { IconCloudComponent } from '@/components/techstack/icon-cloud';
+import { cn } from '@/lib/utils';
+import ProjectCard from '@/components/shared/project-card';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -218,6 +220,47 @@ export default async function Home({
             </div>
             <IconCloudComponent />
           </div>
+        </section>
+        <section
+          className='mx-auto relative px-10 py-16 max-w-full '
+          id='projects'
+        >
+          <div className='flex min-h-0 flex-col gap-y-3 justify-center w-full'>
+            <div className='max-w-3xl mx-auto px-10 flex flex-col gap-y-3'>
+              <BlurFade delay={BLUR_FADE_DELAY * 13}>
+                <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
+                  Projects
+                </h2>
+              </BlurFade>
+
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY * 14}
+                text='I am currently learning React Native to be able to build cross-platform applications and website animations using G-sap and Framer Motion. I am excited to continue exploring and learning new technologies and frameworks in the future.'
+              />
+            </div>
+
+            <div className='grid sm:grid-cols-2 md:grid-cols-4 gap-2'>
+              {DATA.projects.map((project, id) => {
+                const colSpanClass = cn(
+                  id % 6 === 2 || id % 6 === 3
+                    ? 'md:col-span-2'
+                    : id % 4 === 2 && id % 4 === 3
+                    ? 'md:col-span-2'
+                    : 'md:col-span-1'
+                );
+                return (
+                  <BlurFade
+                    key={project.title}
+                    delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                    className={colSpanClass}
+                  >
+                    <ProjectCard project={project} />
+                  </BlurFade>
+                );
+              })}
+            </div>
+          </div>
+          <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
         </section>
       </div>
     </>

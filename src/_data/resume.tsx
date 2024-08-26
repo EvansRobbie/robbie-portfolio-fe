@@ -136,13 +136,9 @@ export const DATA = {
           href: 'https://www.kaiandkaro.com/',
           icon: <Icons.smile className='size-3' />,
         },
-        {
-          type: 'Source',
-          href: 'https://github.com/conventional-emoji-commits/conventional-emoji-commits.site',
-          icon: <Icons.github className='size-3' />,
-        },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707406/kai_karo_ywedyi.png',
       video: 'https://cdn.nyxbui.design/conventional-emoji-commits.mp4',
     },
     {
@@ -160,7 +156,8 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707414/bridgelab_s4azjl.png',
       video: 'https://cdn.nyxbui.design/bento-grid.mp4',
     },
     {
@@ -178,7 +175,8 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707422/onekitty_tv9gjh.png',
       video: 'https://cdn.nyxbui.design/bento-grid.mp4',
     },
     {
@@ -196,7 +194,8 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707421/pride_nyylhi.png',
       video: 'https://cdn.nyxbui.design/bento-grid.mp4',
     },
     {
@@ -214,7 +213,8 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707426/hoteles_inplt0.png',
       video: 'https://cdn.nyxbui.design/bento-grid.mp4',
     },
     {
@@ -232,7 +232,8 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707427/mjengo_euhamj.png',
       video: 'https://cdn.nyxbui.design/bento-grid.mp4',
     },
     {
@@ -250,7 +251,8 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707407/sicklers_oaubcw.png',
       video: 'https://cdn.nyxbui.design/bento-grid.mp4',
     },
     {
@@ -268,7 +270,8 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707411/farmers_u9nbnd.png',
       video: 'https://cdn.nyxbui.design/bento-grid.mp4',
     },
     {
@@ -290,7 +293,8 @@ export const DATA = {
           icon: <Icons.github className='size-3' />,
         },
       ],
-      image: '',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707400/portfolio_gurn1s.png',
       video: 'https://cdn.nyxbui.design/more-projects.mp4',
     },
   ],
