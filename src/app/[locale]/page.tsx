@@ -1,25 +1,21 @@
-import Image from 'next/image';
-import initTranslations from '../i18n';
-import ContactInfo from '@/components/shared/contact-info';
-import { ModeToggle } from '@/components/shared/mode-toggle';
-import LanguageTranslate from '@/components/shared/language-translate';
-import Link from 'next/link';
-import BlurFade from '@/components/shared/blur-fade-effect';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { GradualSpacing } from '@/components/ui/gradual-spacing';
-import BlurFadeText from '@/components/shared/blur-fade-text';
-import { TextRevealCard } from '@/components/shared/text-reveal';
-import { SparklesCore } from '@/components/ui/sparkles';
-import AnimatedCounter from '@/components/ui/animated-counter';
-import { ResumeCard } from '@/components/shared/resume-card';
 import { DATA } from '@/_data/resume';
-import BackroundParticles from '@/components/ui/particles';
-import { largeParticles } from '@/_data/particle-options';
+import BlurFade from '@/components/shared/blur-fade-effect';
+import BlurFadeText from '@/components/shared/blur-fade-text';
+import ContactInfo from '@/components/shared/contact-info';
 import CustomButton from '@/components/shared/download-button';
-import { Badge } from '@/components/ui/badge';
-import { IconCloudComponent } from '@/components/techstack/icon-cloud';
-import { cn } from '@/lib/utils';
+import LanguageTranslate from '@/components/shared/language-translate';
+import { ModeToggle } from '@/components/shared/mode-toggle';
 import ProjectCard from '@/components/shared/project-card';
+import { ResumeCard } from '@/components/shared/resume-card';
+import { TextRevealCard } from '@/components/shared/text-reveal';
+import { IconCloudComponent } from '@/components/techstack/icon-cloud';
+import AnimatedCounter from '@/components/ui/animated-counter';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { GradualSpacing } from '@/components/ui/gradual-spacing';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import initTranslations from '../i18n';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -154,7 +150,10 @@ export default async function Home({
             ))}
           </div>
         </section>
-        <section className='mx-auto px-4 md:px-10 py-16 max-w-3xl' id='education'>
+        <section
+          className='mx-auto px-4 md:px-10 py-16 max-w-3xl'
+          id='education'
+        >
           <div className='flex min-h-0 flex-col gap-y-3'>
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
@@ -179,7 +178,10 @@ export default async function Home({
             ))}
           </div>
         </section>
-        <section className='mx-auto px-4 md:px-10 py-16 max-w-3xl' id='techstack'>
+        <section
+          className='mx-auto px-4 md:px-10 py-16 max-w-3xl'
+          id='techstack'
+        >
           <div className='flex min-h-0 flex-col gap-y-3 justify-center w-full'>
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
