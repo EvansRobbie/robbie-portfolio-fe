@@ -27,7 +27,7 @@ const VideoDetail = ({
 }) => {
   return (
     <VideoModalContent>
-      <VideoModalTitle>{project.title}</VideoModalTitle>
+      <VideoModalTitle className='text-lg md:text-2xl'>{project.title}</VideoModalTitle>
       <VideoModalDescription className='text-sm'>
         {project.description}
       </VideoModalDescription>
@@ -50,6 +50,7 @@ const VideoDetail = ({
           <video
             className='size-full w-full object-cover'
             src={project.video}
+            controls
             muted
             autoPlay={true}
             // allow='accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;'
