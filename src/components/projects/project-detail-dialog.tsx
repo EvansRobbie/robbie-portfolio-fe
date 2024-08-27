@@ -16,7 +16,7 @@ const ProjectDetailDialog = ({
       <ScrollArea className=' max-h-full md:max-h-[90dvh] md:h-full overflow-auto'>
 
       <DialogHeader>
-        <DialogTitle className='text-lg font-semibold'>{project.title}</DialogTitle>
+        <DialogTitle className='text-lg font-semibold pb-4'>{project.title}</DialogTitle>
         <Image
           src={project.image}
           alt={project.title}

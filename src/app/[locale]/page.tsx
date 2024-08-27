@@ -100,7 +100,7 @@ export default async function Home({
             />
 
             <div className='pt-6'>
-              <BlurFadeText text='As a skilled React developer, I am passionate about creating intuitive and responsive web applications that deliver exceptional user experiences. With 3+ years of experience in developing complex front-end applications, I have honed my skills in Next.js, React, Redux, Zustand, Tailwind-Css HTML, CSS, and JavaScript.' />
+              <BlurFadeText text='As a skilled Frontend developer, I am passionate about creating intuitive and responsive web applications that deliver exceptional user experiences. With 3+ years of experience in developing complex front-end applications, I have honed my skills in Next.js, React, Redux, Zustand, Tailwind-Css HTML, CSS, Typescript, and JavaScript.' />
               <div className='py-8 max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-y-20 justify-items-center items-center'>
                 {counter.map((counter: any) => (
                   <div
@@ -237,7 +237,7 @@ export default async function Home({
 
               <BlurFadeText
                 delay={BLUR_FADE_DELAY * 14}
-                text='I am currently learning React Native to be able to build cross-platform applications and website animations using G-sap and Framer Motion. I am excited to continue exploring and learning new technologies and frameworks in the future.'
+                text='Here are some of my favorite projects that I have collaborated on, where I’ve contributed to translating designs into functional implementations and integrating APIs'
               />
             </div>
 
