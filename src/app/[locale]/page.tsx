@@ -37,7 +37,7 @@ export default async function Home({
   const { t } = await initTranslations(locale, ['hello']);
   return (
     <>
-      <section className='px-10 h-full'>
+      <section className='px-4 md:px-10 h-full'>
         <div className='w-full flex justify-between items-center'>
           <div className='flex items-center gap-4'>
             <ContactInfo />
@@ -57,7 +57,7 @@ export default async function Home({
           </div>
         </div>
         <div className='mx-auto w-full max-w-2xl space-y-8 flex justify-center items-center min-h-[90vh]'>
-          <div className='flex justify-between gap-2'>
+          <div className='flex flex-col-reverse md:flex-row justify-between gap-2'>
             <div className='flex flex-1 flex-col space-y-3'>
               <div className='flex gap-1.5 items-center h-full w-full'>
                 <GradualSpacing
@@ -94,7 +94,7 @@ export default async function Home({
       </section>
       {/* about me */}
       <div className='relative'>
-        <section className='px-10 relative max-w-3xl mx-auto'>
+        <section className='px-4 md:px-10 relative max-w-3xl mx-auto'>
           {/* <BackroundParticles options={largeParticles} /> */}
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
             <BlurFadeText
@@ -127,7 +127,7 @@ export default async function Home({
           <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
         </section>
 
-        <section className='mx-auto px-10 pt-8 max-w-3xl' id='work'>
+        <section className='mx-auto px-4 md:px-10 pt-8 max-w-3xl' id='work'>
           <div className='flex min-h-0 flex-col gap-y-3'>
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
               <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl py-3'>
@@ -154,7 +154,7 @@ export default async function Home({
             ))}
           </div>
         </section>
-        <section className='mx-auto px-10 py-16 max-w-3xl' id='education'>
+        <section className='mx-auto px-4 md:px-10 py-16 max-w-3xl' id='education'>
           <div className='flex min-h-0 flex-col gap-y-3'>
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
@@ -179,7 +179,7 @@ export default async function Home({
             ))}
           </div>
         </section>
-        <section className='mx-auto px-10 py-16 max-w-3xl' id='techstack'>
+        <section className='mx-auto px-4 md:px-10 py-16 max-w-3xl' id='techstack'>
           <div className='flex min-h-0 flex-col gap-y-3 justify-center w-full'>
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
@@ -222,11 +222,11 @@ export default async function Home({
           </div>
         </section>
         <section
-          className='mx-auto relative px-10 py-16 max-w-full '
+          className='mx-auto relative px-4 md:px-10  xl:px-20 py-16 max-w-full z-10 '
           id='projects'
         >
           <div className='flex min-h-0 flex-col gap-y-3 justify-center w-full'>
-            <div className='max-w-3xl mx-auto px-10 flex flex-col gap-y-3'>
+            <div className='max-w-3xl mx-auto md:px-10 flex flex-col gap-y-3'>
               <BlurFade delay={BLUR_FADE_DELAY * 13}>
                 <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
                   Projects
@@ -239,7 +239,7 @@ export default async function Home({
               />
             </div>
 
-            <div className='grid sm:grid-cols-2 md:grid-cols-4 gap-2'>
+            <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 pt-6 pb-8'>
               {DATA.projects.map((project, id) => {
                 const colSpanClass = cn(
                   id % 6 === 2 || id % 6 === 3
@@ -260,7 +260,7 @@ export default async function Home({
               })}
             </div>
           </div>
-          <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
+          <div className='absolute bottom-auto -z-10 left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
         </section>
       </div>
     </>
