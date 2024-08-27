@@ -81,7 +81,7 @@ export default async function Home({
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 0.6}>
               <Avatar className='size-28 border'>
-                <AvatarImage />
+                <AvatarImage src='https://res.cloudinary.com/dqg83cf9f/image/upload/v1724797770/IMG_0731_yadrdq.jpg' className='w-full h-full object-cover object-top' />
                 <AvatarFallback>EV</AvatarFallback>
               </Avatar>
             </BlurFade>
