@@ -1,11 +1,16 @@
 'use client';
 import { cn } from '@/lib/utils';
+import { EyeOpenIcon } from '@radix-ui/react-icons';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
-import { AnimatePresence, motion, useMotionValue } from 'framer-motion';
 import { Button } from '../ui/button';
-import { EyeIcon } from 'lucide-react';
-import { EyeOpenIcon, ImageIcon, SunIcon } from '@radix-ui/react-icons';
+import {
+  Dialog,
+  DialogContent,
+  DialogOverlay,
+  DialogTrigger,
+} from '../ui/dialog';
+import ProjectDetailDialog from '../projects/project-detail-dialog';
 
 const ProjectCard = ({ project }: { project: any }) => {
   const containerVariants = {
@@ -15,14 +20,11 @@ const ProjectCard = ({ project }: { project: any }) => {
         staggerChildren: 0.2, // Stagger time between buttons
       },
     },
-   
-    
   };
 
   const buttonVariants = {
     initial: { opacity: 0, y: 20 }, // Hidden state
-    hover: { opacity: 1, y: 0 }, 
-
+    hover: { opacity: 1, y: 0 },
   };
   return (
     <div className={cn('overflow-hidden relative ')}>
@@ -44,11 +46,17 @@ const ProjectCard = ({ project }: { project: any }) => {
         variants={containerVariants}
         className='absolute inset-0 right-6 z-10 flex flex-col items-end gap-2 justify-center'
       >
-        <motion.div variants={buttonVariants}>
-          <Button className='rounded-full' size={'icon'}>
-            <EyeOpenIcon />
-          </Button>
-        </motion.div>
+        <Dialog>
+          <DialogTrigger asChild>
+            <motion.div variants={buttonVariants}>
+              <Button className='rounded-full' size={'icon'}>
+                <EyeOpenIcon />
+              </Button>
+            </motion.div>
+          </DialogTrigger>
+          <DialogOverlay />
+          <ProjectDetailDialog project={project} />
+        </Dialog>
         <motion.div variants={buttonVariants}>
           <Button className='rounded-full' size={'icon'}>
             <EyeOpenIcon />
