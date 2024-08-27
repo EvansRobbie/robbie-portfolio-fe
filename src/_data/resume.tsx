@@ -116,20 +116,13 @@ export const DATA = {
   },
   projects: [
     {
-      title: 'Kai And Karo - Car dealership',
+      title: 'Kai And Karo - Car Dealership',
       href: 'https://www.kaiandkaro.com/',
       dates: 'Oct 2023 - Present',
       active: true,
       description:
-        'A specification for adding human and machine readable meaning to commit messages using color-rich emojis 🌈',
-      technologies: [
-        'git',
-        'chakra ui',
-        'typescript',
-        'react',
-        'next.js',
-        'tailwind css',
-      ],
+        'Kai and Karo is a sleek, modern car dealership website designed to offer a seamless online experience for customers looking to buy or explore vehicles. The platform features a user-friendly interface with intuitive navigation, allowing users to easily browse through a wide range of cars, view detailed specifications, and compare different models.',
+      technologies: ['git', 'Chakra ui', 'Typescript', 'React', 'Next.js'],
       links: [
         {
           type: 'Website',
@@ -139,15 +132,16 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707406/kai_karo_ywedyi.png',
-      video: 'https://cdn.nyxbui.design/conventional-emoji-commits.mp4',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724789639/Screen_Recording_2024-08-27_at_10.43.12_PM_zchetj.mov',
     },
     {
-      title: 'Bridge lab',
+      title: 'Bridge lab - Mentorship Programs',
       href: 'https://bridgelab.africa',
       dates: 'June 2023 - Present',
       active: true,
       description:
-        'Fusion UI library combining Shadcn/UI and MagicUI. Featuring 150+ free and open-source components built with React, Typescript, Tailwind CSS, and Framer Motion. Create stunning, responsive interfaces effortlessly. 100% open-source.',
+        'Bridgelab Mentorship Programs is a dynamic platform dedicated to connecting aspiring professionals with experienced mentors in various fields. The website serves as a hub for mentorship, offering personalized guidance and support to help mentees achieve their career goals. It features a robust matching algorithm that pairs mentees with mentors based on their interests, goals, and professional backgrounds. The platform also includes tools for scheduling sessions, tracking progress, and providing feedback, ensuring that both mentors and mentees have a structured and productive experience. Bridgelab aims to foster a community of continuous learning and professional development through its mentorship programs.',
       technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Material UI'],
       links: [
         {
@@ -158,15 +152,16 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707414/bridgelab_s4azjl.png',
-      video: 'https://cdn.nyxbui.design/bento-grid.mp4',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790376/Screen_Recording_2024-08-27_at_10.37.24_PM_nwi2rn.mov',
     },
     {
-      title: 'Onekitty',
+      title: 'Onekitty - Contribution Platform',
       href: 'https://www.onekitty.co.ke/',
       dates: 'June 2023 - Present',
       active: true,
       description:
-        'Fusion UI library combining Shadcn/UI and MagicUI. Featuring 150+ free and open-source components built with React, Typescript, Tailwind CSS, and Framer Motion. Create stunning, responsive interfaces effortlessly. 100% open-source.',
+        'OneKitty is a streamlined platform designed to facilitate and manage contributions for various causes. It allows users to easily donate or support projects, track their contributions, and engage with the community. The platform offers a simple interface for browsing and contributing to initiatives, ensuring a seamless and impactful experience for both contributors and project organizers.',
       technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Material UI'],
       links: [
         {
@@ -177,7 +172,8 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707422/onekitty_tv9gjh.png',
-      video: 'https://cdn.nyxbui.design/bento-grid.mp4',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790522/Screen_Recording_2024-08-27_at_10.36.09_PM_qfpkre.mov',
     },
     {
       title: 'Pride of Kenya Awards',
@@ -185,8 +181,8 @@ export const DATA = {
       dates: 'June 2023 - Present',
       active: true,
       description:
-        'Fusion UI library combining Shadcn/UI and MagicUI. Featuring 150+ free and open-source components built with React, Typescript, Tailwind CSS, and Framer Motion. Create stunning, responsive interfaces effortlessly. 100% open-source.',
-      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Material UI'],
+        'Pride of Kenya Awards is a dynamic platform where young artists and content creators across Kenya can showcase their talents and gain recognition. It allows users to vote for their favorite nominees in various categories, fostering a supportive community and celebrating emerging talent.',
+      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Shadcn UI'],
       links: [
         {
           type: 'Website',
@@ -196,16 +192,17 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707421/pride_nyylhi.png',
-      video: 'https://cdn.nyxbui.design/bento-grid.mp4',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791357/Screen_Recording_2024-08-27_at_11.36.59_PM_l00koz.mov',
     },
     {
-      title: 'Hoteles & Hogares',
+      title: 'Hoteles & Hogares - Travel and Accommodation',
       href: 'https://hoteleshogares.com/',
       dates: 'June 2023 - Present',
       active: true,
       description:
-        'Fusion UI library combining Shadcn/UI and MagicUI. Featuring 150+ free and open-source components built with React, Typescript, Tailwind CSS, and Framer Motion. Create stunning, responsive interfaces effortlessly. 100% open-source.',
-      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Material UI'],
+        'Hoteles & Hogares is a comprehensive accommodation and travel platform designed to simplify your travel planning. It offers a curated selection of hotels, vacation rentals, and unique stays, catering to diverse preferences and budgets.',
+      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Next i18n'],
       links: [
         {
           type: 'Website',
@@ -215,7 +212,8 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707426/hoteles_inplt0.png',
-      video: 'https://cdn.nyxbui.design/bento-grid.mp4',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791170/Screen_Recording_2024-08-27_at_11.34.06_PM_jhxzs0.mov',
     },
     {
       title: 'Mjengo Smart Technology',
@@ -223,8 +221,8 @@ export const DATA = {
       dates: 'June 2023 - Present',
       active: true,
       description:
-        'Fusion UI library combining Shadcn/UI and MagicUI. Featuring 150+ free and open-source components built with React, Typescript, Tailwind CSS, and Framer Motion. Create stunning, responsive interfaces effortlessly. 100% open-source.',
-      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Material UI'],
+        'Mjengo Smart Technology is an innovative platform dedicated to modernizing the construction industry through smart solutions. It offers a range of cutting-edge tools and technologies designed to streamline building processes, enhance efficiency, and ensure quality. From smart project management systems to real-time data analytics and automated construction processes, Mjengo Smart Technology aims to revolutionize the way construction projects are managed and executed, driving progress and precision in the industry.',
+      technologies: ['Next.js', 'Typescript', 'TailwindCSS'],
       links: [
         {
           type: 'Website',
@@ -234,7 +232,7 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707427/mjengo_euhamj.png',
-      video: 'https://cdn.nyxbui.design/bento-grid.mp4',
+      video: '',
     },
     {
       title: 'Save The Sicklers',
@@ -242,8 +240,8 @@ export const DATA = {
       dates: 'June 2023 - Present',
       active: true,
       description:
-        'Fusion UI library combining Shadcn/UI and MagicUI. Featuring 150+ free and open-source components built with React, Typescript, Tailwind CSS, and Framer Motion. Create stunning, responsive interfaces effortlessly. 100% open-source.',
-      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Material UI'],
+        'Save the Sicklers is a campaign dedicated to raising awareness about sickle cell disease. The initiative focuses on educating the public about the condition, its impact, and the importance of early diagnosis and management.',
+      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Graphql'],
       links: [
         {
           type: 'Website',
@@ -253,7 +251,8 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707407/sicklers_oaubcw.png',
-      video: 'https://cdn.nyxbui.design/bento-grid.mp4',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791838/Screen_Recording_2024-08-27_at_11.39.24_PM_n5lbkj.mov',
     },
     {
       title: 'Farmers Master Class',
@@ -261,8 +260,8 @@ export const DATA = {
       dates: 'June 2023 - Present',
       active: true,
       description:
-        'Fusion UI library combining Shadcn/UI and MagicUI. Featuring 150+ free and open-source components built with React, Typescript, Tailwind CSS, and Framer Motion. Create stunning, responsive interfaces effortlessly. 100% open-source.',
-      technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Material UI'],
+        'Farmers Master Class is an educational platform designed to enhance agricultural knowledge and skills among farmers. The platform aims to empower farmers with the tools and insights needed to increase productivity, improve profitability, and adapt to evolving agricultural trends',
+      technologies: ['Next.js', 'Typescript', 'TailwindCSS'],
       links: [
         {
           type: 'Website',
@@ -272,15 +271,23 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707411/farmers_u9nbnd.png',
-      video: 'https://cdn.nyxbui.design/bento-grid.mp4',
+      video: '',
     },
     {
-      title: 'More Projects',
+      title: 'More Projects - portfolio',
       href: 'https://evanrobbymacharia.netlify.app/',
       dates: '',
       active: true,
-      description: 'Explore many more projects here.',
-      technologies: [],
+      description:
+        'EDiscover additional projects from my previous portfolio to see a broader range of my work',
+      technologies: [
+        'React',
+        'Next.js',
+        'Typescript',
+        'TailwindCSS',
+        'Directus',
+        'Shadcn UI',
+      ],
       links: [
         {
           type: 'Website',
@@ -289,13 +296,14 @@ export const DATA = {
         },
         {
           type: 'Source',
-          href: 'https://github.com/magicuidesign/magicui',
+          href: '',
           icon: <Icons.github className='size-3' />,
         },
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707400/portfolio_gurn1s.png',
-      video: 'https://cdn.nyxbui.design/more-projects.mp4',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790931/Screen_Recording_2024-08-27_at_10.45.11_PM_vvrsqx.mov',
     },
   ],
 };

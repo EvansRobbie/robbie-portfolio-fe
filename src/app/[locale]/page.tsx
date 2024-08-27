@@ -1,25 +1,21 @@
-import Image from 'next/image';
-import initTranslations from '../i18n';
-import ContactInfo from '@/components/shared/contact-info';
-import { ModeToggle } from '@/components/shared/mode-toggle';
-import LanguageTranslate from '@/components/shared/language-translate';
-import Link from 'next/link';
-import BlurFade from '@/components/shared/blur-fade-effect';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { GradualSpacing } from '@/components/ui/gradual-spacing';
-import BlurFadeText from '@/components/shared/blur-fade-text';
-import { TextRevealCard } from '@/components/shared/text-reveal';
-import { SparklesCore } from '@/components/ui/sparkles';
-import AnimatedCounter from '@/components/ui/animated-counter';
-import { ResumeCard } from '@/components/shared/resume-card';
 import { DATA } from '@/_data/resume';
-import BackroundParticles from '@/components/ui/particles';
-import { largeParticles } from '@/_data/particle-options';
+import BlurFade from '@/components/shared/blur-fade-effect';
+import BlurFadeText from '@/components/shared/blur-fade-text';
+import ContactInfo from '@/components/shared/contact-info';
 import CustomButton from '@/components/shared/download-button';
-import { Badge } from '@/components/ui/badge';
-import { IconCloudComponent } from '@/components/techstack/icon-cloud';
-import { cn } from '@/lib/utils';
+import LanguageTranslate from '@/components/shared/language-translate';
+import { ModeToggle } from '@/components/shared/mode-toggle';
 import ProjectCard from '@/components/shared/project-card';
+import { ResumeCard } from '@/components/shared/resume-card';
+import { TextRevealCard } from '@/components/shared/text-reveal';
+import { IconCloudComponent } from '@/components/techstack/icon-cloud';
+import AnimatedCounter from '@/components/ui/animated-counter';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { GradualSpacing } from '@/components/ui/gradual-spacing';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import initTranslations from '../i18n';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -81,11 +77,16 @@ export default async function Home({
                 delay={BLUR_FADE_DELAY * 0.5}
                 text={`I am a Frontend Developer dedicated to building exceptional digital experiences. My focus is on creating responsive and dynamic frontend applications that deliver seamless and engaging user interactions.`}
               />
-              <CustomButton />
+              <Link href={'/evansrobbie5311@gmail.com.pdf'} target='_blank'>
+                <CustomButton />
+              </Link>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 0.6}>
               <Avatar className='size-28 border'>
-                <AvatarImage />
+                <AvatarImage
+                  src='https://res.cloudinary.com/dqg83cf9f/image/upload/v1724797770/IMG_0731_yadrdq.jpg'
+                  className='w-full h-full object-cover object-top'
+                />
                 <AvatarFallback>EV</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -104,7 +105,7 @@ export default async function Home({
             />
 
             <div className='pt-6'>
-              <BlurFadeText text='As a skilled React developer, I am passionate about creating intuitive and responsive web applications that deliver exceptional user experiences. With 3+ years of experience in developing complex front-end applications, I have honed my skills in Next.js, React, Redux, Zustand, Tailwind-Css HTML, CSS, and JavaScript.' />
+              <BlurFadeText text='As a skilled Frontend developer, I am passionate about creating intuitive and responsive web applications that deliver exceptional user experiences. With 3+ years of experience in developing complex front-end applications, I have honed my skills in Next.js, React, Redux, Zustand, Tailwind-Css HTML, CSS, Typescript, and JavaScript.' />
               <div className='py-8 max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-y-20 justify-items-center items-center'>
                 {counter.map((counter: any) => (
                   <div
@@ -154,7 +155,10 @@ export default async function Home({
             ))}
           </div>
         </section>
-        <section className='mx-auto px-4 md:px-10 py-16 max-w-3xl' id='education'>
+        <section
+          className='mx-auto px-4 md:px-10 py-16 max-w-3xl'
+          id='education'
+        >
           <div className='flex min-h-0 flex-col gap-y-3'>
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
@@ -179,7 +183,10 @@ export default async function Home({
             ))}
           </div>
         </section>
-        <section className='mx-auto px-4 md:px-10 py-16 max-w-3xl' id='techstack'>
+        <section
+          className='mx-auto px-4 md:px-10 py-16 max-w-3xl'
+          id='techstack'
+        >
           <div className='flex min-h-0 flex-col gap-y-3 justify-center w-full'>
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-4xl pb-4'>
@@ -235,7 +242,7 @@ export default async function Home({
 
               <BlurFadeText
                 delay={BLUR_FADE_DELAY * 14}
-                text='I am currently learning React Native to be able to build cross-platform applications and website animations using G-sap and Framer Motion. I am excited to continue exploring and learning new technologies and frameworks in the future.'
+                text='Here are some of my favorite projects that I have collaborated on, where I’ve contributed to translating designs into functional implementations and integrating APIs'
               />
             </div>
 
