@@ -251,7 +251,8 @@ export const DATA = {
       ],
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707407/sicklers_oaubcw.png',
-      video: '',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791838/Screen_Recording_2024-08-27_at_11.39.24_PM_n5lbkj.mov',
     },
     {
       title: 'Farmers Master Class',
