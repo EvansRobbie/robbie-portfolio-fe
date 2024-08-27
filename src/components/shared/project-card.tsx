@@ -1,16 +1,13 @@
 'use client';
+import { VideoModal, VideoModalTrigger } from '@/components/ui/video-dialog';
 import { cn } from '@/lib/utils';
 import { EyeOpenIcon } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Button } from '../ui/button';
-import {
-  Dialog,
-  DialogContent,
-  DialogOverlay,
-  DialogTrigger,
-} from '../ui/dialog';
 import ProjectDetailDialog from '../projects/project-detail-dialog';
+import { Button } from '../ui/button';
+import { Dialog, DialogOverlay, DialogTrigger } from '../ui/dialog';
+import VideoDetail from '../projects/video-detail';
 
 const ProjectCard = ({ project }: { project: any }) => {
   const containerVariants = {
@@ -57,11 +54,16 @@ const ProjectCard = ({ project }: { project: any }) => {
           <DialogOverlay />
           <ProjectDetailDialog project={project} />
         </Dialog>
-        <motion.div variants={buttonVariants}>
-          <Button className='rounded-full' size={'icon'}>
-            <EyeOpenIcon />
-          </Button>
-        </motion.div>
+        <VideoModal>
+          <VideoModalTrigger>
+            <motion.div variants={buttonVariants}>
+              <Button className='rounded-full' size={'icon'}>
+                <EyeOpenIcon />
+              </Button>
+            </motion.div>
+          </VideoModalTrigger>
+          <VideoDetail project={project} />
+        </VideoModal>
       </motion.div>
     </div>
   );
