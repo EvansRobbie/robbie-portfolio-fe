@@ -27,9 +27,9 @@ const VideoDetail = ({
 }) => {
   return (
     <VideoModalContent>
-      <VideoModalTitle>Modal Video Demo</VideoModalTitle>
-      <VideoModalDescription>
-        Your subtitle or description here
+      <VideoModalTitle>{project.title}</VideoModalTitle>
+      <VideoModalDescription className='text-sm'>
+        {project.description}
       </VideoModalDescription>
       <VideoModalVideo>
         <VideoPlayer>
@@ -47,11 +47,13 @@ const VideoDetail = ({
               <PlayCircle className='size-20 stroke-1 text-white' />
             </button>
           </VideoPlayButton>
-          <iframe
-            className='size-full'
+          <video
+            className='size-full w-full object-cover'
             src={project.video}
-            allow='accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;'
-            allowFullScreen
+            muted
+            autoPlay={true}
+            // allow='accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;'
+            // allowFullScreen
           />
         </VideoPlayer>
       </VideoModalVideo>
