@@ -1,15 +1,8 @@
-import React from 'react';
+import { LayoutGrid } from 'lucide-react';
 import Link from 'next/link';
-import { LayoutGrid, LogOut, User } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-  TooltipProvider,
-} from '@/components/ui/tooltip';
+import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,6 +12,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 const ContactInfo = () => {
   return (
     <DropdownMenu>
@@ -67,14 +66,6 @@ const ContactInfo = () => {
             </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
-
-        {/* <DropdownMenuItem
-        className='hover:cursor-pointer'
-        onClick={handleSignout}
-      >
-        <LogOut className='w-4 h-4 mr-3 text-muted-foreground' />
-        Sign out
-      </DropdownMenuItem> */}
       </DropdownMenuContent>
     </DropdownMenu>
   );

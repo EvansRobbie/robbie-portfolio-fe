@@ -77,11 +77,16 @@ export default async function Home({
                 delay={BLUR_FADE_DELAY * 0.5}
                 text={`I am a Frontend Developer dedicated to building exceptional digital experiences. My focus is on creating responsive and dynamic frontend applications that deliver seamless and engaging user interactions.`}
               />
-              <CustomButton />
+              <Link href={'/evansrobbie5311@gmail.com.pdf'} target='_blank'>
+                <CustomButton />
+              </Link>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 0.6}>
               <Avatar className='size-28 border'>
-                <AvatarImage src='https://res.cloudinary.com/dqg83cf9f/image/upload/v1724797770/IMG_0731_yadrdq.jpg' className='w-full h-full object-cover object-top' />
+                <AvatarImage
+                  src='https://res.cloudinary.com/dqg83cf9f/image/upload/v1724797770/IMG_0731_yadrdq.jpg'
+                  className='w-full h-full object-cover object-top'
+                />
                 <AvatarFallback>EV</AvatarFallback>
               </Avatar>
             </BlurFade>
