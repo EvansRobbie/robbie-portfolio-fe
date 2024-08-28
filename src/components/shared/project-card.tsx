@@ -8,8 +8,10 @@ import ProjectDetailDialog from '../projects/project-detail-dialog';
 import { Button } from '../ui/button';
 import { Dialog, DialogOverlay, DialogTrigger } from '../ui/dialog';
 import VideoDetail from '../projects/video-detail';
+import { useState } from 'react';
 
 const ProjectCard = ({ project }: { project: any }) => {
+  const [isClicked, setIsClicked] = useState(false);
   const containerVariants = {
     initial: {},
     hover: {
@@ -22,9 +24,16 @@ const ProjectCard = ({ project }: { project: any }) => {
   const buttonVariants = {
     initial: { opacity: 0, y: 20 }, // Hidden state
     hover: { opacity: 1, y: 0 },
+    clicked: { opacity: 1, y: 0 }, // Visible when clicked
   };
+
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
-    <div className={cn('overflow-hidden relative ')}>
+    <div className={cn('overflow-hidden relative ')} onClick={handleClick}>
       <Image
         data-loaded='false'
         onLoad={(event) => {
@@ -38,7 +47,7 @@ const ProjectCard = ({ project }: { project: any }) => {
       />
       <motion.div
         initial='initial'
-        animate='initial'
+        animate={isClicked ? 'clicked' : 'initial'}
         whileHover='hover'
         whileTap={'hover'}
         variants={containerVariants}
@@ -47,7 +56,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         <Dialog>
           <DialogTrigger asChild>
             <motion.div variants={buttonVariants}>
-              <Button className='rounded-full' size={'icon'}>
+              <Button className='rounded-full shadow-md' size={'icon'}>
                 <EyeOpenIcon />
               </Button>
             </motion.div>
@@ -59,7 +68,7 @@ const ProjectCard = ({ project }: { project: any }) => {
           <VideoModalTrigger asChild>
             {project.video && (
               <motion.div variants={buttonVariants}>
-                <Button className='rounded-full' size={'icon'}>
+                <Button className='rounded-full shadow-md' size={'icon'}>
                   <VideoIcon />
                 </Button>
               </motion.div>
