@@ -21,38 +21,69 @@ const barlow = Barlow_Semi_Condensed({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-     default: DATA.name,
-     template: `%s | ${DATA.name}`,
+    default: DATA.name,
+    template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  alternates: {
+    canonical: '/',
+  },
+  keywords: [
+    'Frontend Developer',
+    'React Developer',
+    'Next.js',
+    'Tailwind',
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'Typescript',
+    'Shadcn UI',
+    'Material UI',
+    'Vercel',
+    'Framer Motion',
+    'Chakra UI',
+  ],
   openGraph: {
-     title: `${DATA.name}`,
-     description: DATA.description,
-     url: DATA.url,
-     siteName: `${DATA.name}`,
-     locale: 'en_US',
-     type: 'website',
+    title: `${DATA.name}`,
+    description: DATA.description,
+    url: DATA.url,
+    siteName: `${DATA.name}`,
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: '/opengraph-image.png',
+        width: 1800,
+        height: 1600,
+        alt: 'alt open graph',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
   robots: {
-     index: true,
-     follow: true,
-     googleBot: {
-        'index': true,
-        'follow': true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-     },
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   twitter: {
-     title: `${DATA.name}`,
-     card: 'summary_large_image',
+    title: `${DATA.name}`,
+    card: 'summary_large_image',
   },
   verification: {
-     google: '',
-     yandex: '',
+    google: '',
+    yandex: '',
   },
-}
+};
 
 const namespaces = ['hello'];
 
