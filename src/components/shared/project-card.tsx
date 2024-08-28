@@ -40,6 +40,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         initial='initial'
         animate='initial'
         whileHover='hover'
+        whileTap={'hover'}
         variants={containerVariants}
         className='absolute inset-0 right-6 z-10 flex flex-col items-end gap-2 justify-center'
       >
