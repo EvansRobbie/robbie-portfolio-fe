@@ -1,6 +1,10 @@
 import { Icons } from '@/components/shared/icons';
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from 'lucide-react';
 export const DATA = {
+  name: 'Evanrobby Macharia',
+  url: 'https://robbie-portfolio-fe.vercel.app',
+  description:
+    'I am a Frontend Developer dedicated to building exceptional digital experiences. My focus is on creating responsive and dynamic frontend applications that deliver seamless and engaging user interactions.',
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
     { href: '/blogs', icon: NotebookIcon, label: 'Blog' },

@@ -75,7 +75,7 @@ export default async function Home({
               <BlurFadeText
                 className='max-w-[600px] text-base leading-7'
                 delay={BLUR_FADE_DELAY * 0.5}
-                text={`I am a Frontend Developer dedicated to building exceptional digital experiences. My focus is on creating responsive and dynamic frontend applications that deliver seamless and engaging user interactions.`}
+                text={DATA.description}
               />
               <Link href={'/evansrobbie5311@gmail.com.pdf'} target='_blank'>
                 <CustomButton />
