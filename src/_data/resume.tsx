@@ -135,7 +135,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707406/kai_karo_ywedyi.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331952/Kai_Karo_epyi1q.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724789639/Screen_Recording_2024-08-27_at_10.43.12_PM_zchetj.mov',
     },
@@ -155,7 +155,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707414/bridgelab_s4azjl.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331955/Bridge_Lab_xjsbet.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790376/Screen_Recording_2024-08-27_at_10.37.24_PM_nwi2rn.mov',
     },
@@ -175,7 +175,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707422/onekitty_tv9gjh.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331967/Onekitty_ittscw.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790522/Screen_Recording_2024-08-27_at_10.36.09_PM_qfpkre.mov',
     },
@@ -195,7 +195,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707421/pride_nyylhi.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331965/Pride_Of_Kenya_Awards_gprh2v.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791357/Screen_Recording_2024-08-27_at_11.36.59_PM_l00koz.mov',
     },
@@ -215,7 +215,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707426/hoteles_inplt0.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331971/Hoteles_Hogares_io1csv.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791170/Screen_Recording_2024-08-27_at_11.34.06_PM_jhxzs0.mov',
     },
@@ -235,7 +235,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707427/mjengo_euhamj.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331963/MjengoSmart_mi5eaa.png',
       video: '',
     },
     {
@@ -254,7 +254,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707407/sicklers_oaubcw.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725332162/Save_the_sicklers_organization_vlxqpr.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791838/Screen_Recording_2024-08-27_at_11.39.24_PM_n5lbkj.mov',
     },
@@ -274,7 +274,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707411/farmers_u9nbnd.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331961/Farmers_Master_Class_uw9jyq.png',
       video: '',
     },
     {
@@ -283,7 +283,7 @@ export const DATA = {
       dates: '',
       active: true,
       description:
-        'EDiscover additional projects from my previous portfolio to see a broader range of my work',
+        'Discover additional projects from my previous portfolio to see a broader range of my work',
       technologies: [
         'React',
         'Next.js',
@@ -305,7 +305,7 @@ export const DATA = {
         },
       ],
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707400/portfolio_gurn1s.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725332156/Robbievans-ReactDeveloper_dlryhy.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790931/Screen_Recording_2024-08-27_at_10.45.11_PM_vvrsqx.mov',
     },
