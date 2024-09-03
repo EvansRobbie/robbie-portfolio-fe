@@ -3,9 +3,9 @@ import { DATA } from '@/_data/resume';
 import { VideoModal, VideoModalTrigger } from '@/components/ui/video-dialog';
 import { cn } from '@/lib/utils';
 import { EyeOpenIcon, VideoIcon } from '@radix-ui/react-icons';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import ProjectDetailDialog from '../projects/project-detail-dialog';
 import VideoDetail from '../projects/video-detail';
 import { Button } from '../ui/button';
@@ -14,6 +14,14 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 
 const ProjectCard = ({ project }: { project: any }) => {
   const [isClicked, setIsClicked] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['0 1', '1.33 1'],
+  });
+
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
@@ -53,10 +61,15 @@ const ProjectCard = ({ project }: { project: any }) => {
 
   return (
     <motion.div
+      ref={ref}
       initial='initial'
       animate={isClicked ? 'clicked' : 'initial'}
       whileHover='hover'
       onClick={handleClick}
+      style={{
+        scale: scaleProgress,
+        opacity: opacityProgress,
+      }}
       className={cn('overflow-hidden relative group')}
       variants={containerVariants}
     >
@@ -79,7 +92,11 @@ const ProjectCard = ({ project }: { project: any }) => {
           className='w-full aspect-video object-cover object-center h-[35dvh] border rounded-xl transition-all duration-200 ease-in-out data-[loaded=false]:animate-pulse data-[loaded=false]:blur-md'
         />
         <Avatar className='absolute top-4 left-4 w-14 h-14 rounded-full bg-black/50 backdrop-filter shadow-2xl'>
-          <AvatarImage src={project.logo} alt={project.title} className=' shadow-2xl' />
+          <AvatarImage
+            src={project.logo}
+            alt={project.title}
+            className=' shadow-2xl'
+          />
           <AvatarFallback className='bg-transparent text-black'>
             {project.title[0]}
           </AvatarFallback>
