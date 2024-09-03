@@ -1,14 +1,15 @@
 'use client';
+import { DATA } from '@/_data/resume';
 import { VideoModal, VideoModalTrigger } from '@/components/ui/video-dialog';
 import { cn } from '@/lib/utils';
 import { EyeOpenIcon, VideoIcon } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useState } from 'react';
 import ProjectDetailDialog from '../projects/project-detail-dialog';
+import VideoDetail from '../projects/video-detail';
 import { Button } from '../ui/button';
 import { Dialog, DialogOverlay, DialogTrigger } from '../ui/dialog';
-import VideoDetail from '../projects/video-detail';
-import { useState } from 'react';
 
 const ProjectCard = ({ project }: { project: any }) => {
   const [isClicked, setIsClicked] = useState(false);
@@ -27,7 +28,6 @@ const ProjectCard = ({ project }: { project: any }) => {
     clicked: { opacity: 1, y: 0 }, // Visible when clicked
   };
 
-
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
@@ -39,6 +39,8 @@ const ProjectCard = ({ project }: { project: any }) => {
         onLoad={(event) => {
           event.currentTarget.setAttribute('data-loaded', 'true');
         }}
+        placeholder='blur'
+        blurDataURL={DATA.blurredDataUrl}
         src={project.image}
         alt={project.title}
         width={400}
