@@ -3,6 +3,8 @@ import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from 'lucide-react';
 export const DATA = {
   name: 'Evanrobby Macharia',
   url: 'https://robbie-portfolio-fe.vercel.app',
+  blurredDataUrl:
+    'data:image/webp;base64,UklGRhwDAABXRUJQVlA4WAoAAAAgAAAAMgEApwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggLgEAAPATAJ0BKjMBqAA+7XaxVimnJCOgKOEwHYlpbt+uGh5p7GBJfIAn82ELd8SQ/ItNSD+OBNhFSMglhvKQmp7chXEF8YQg8aby04ZzgaIT+GOZuGm2MLJSZ8GKQtha9n4MtIVRgQs2DKzBR3b6VQr2NjF0Y7WgHkS/cl6BBQYtp0xYxsDYOzZaGMsb2qGLaEt5Xbc9ChB9m7YyMJIufhS7x1eLUxCq8pptgAD+73O/82ZP5XHgNe2X+kDajHI9LCyMn4P45SlcilCiKf1d47mYSV747KS3wO0oZ49xT6H0io9qxqMoMO+39jlAXju0KQgFWs6gsGOdZ/LLiOHk/VlkLHHnsUBi4Gom9TrnOamWNG1hluFzzUIkV00iyv1suCqCKhsSK9IwiLhQAuL0AAAA',
   description:
     'I am a Frontend Developer dedicated to building exceptional digital experiences. My focus is on creating responsive and dynamic frontend applications that deliver seamless and engaging user interactions.',
   navbar: [
@@ -70,7 +72,8 @@ export const DATA = {
       badges: [],
       location: 'Remote',
       title: 'Frontend (Intern) Developer',
-      logoUrl: '/me.png',
+      logoUrl:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725338433/mjengo_ijauk9.svg',
       start: 'Mar 2023',
       end: 'May 2023',
       description:
@@ -82,7 +85,8 @@ export const DATA = {
       school: 'Modcom Institute of Technology',
       href: 'https://modcom.co.ke/',
       degree: 'Certification in Softaware Development',
-      logoUrl: '/udacity.png',
+      logoUrl:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725338251/modcom_slfuzd.png',
       start: '2020',
       end: '2021',
     },
@@ -90,7 +94,8 @@ export const DATA = {
       school: 'Multimedia University of Kenya',
       href: 'https://www.mmu.ac.ke/',
       degree: 'Bachelor of Science in Information Technology',
-      logoUrl: '/abitur.png',
+      logoUrl:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725338252/mmu_ugwhis.png',
       start: '2017',
       end: '2020',
     },
@@ -134,8 +139,9 @@ export const DATA = {
           icon: <Icons.smile className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339633/kai-logo_ov1pry.svg',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707406/kai_karo_ywedyi.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331952/Kai_Karo_epyi1q.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724789639/Screen_Recording_2024-08-27_at_10.43.12_PM_zchetj.mov',
     },
@@ -154,8 +160,9 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339634/bridgelab-logo_dpz4in.webp',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707414/bridgelab_s4azjl.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331955/Bridge_Lab_xjsbet.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790376/Screen_Recording_2024-08-27_at_10.37.24_PM_nwi2rn.mov',
     },
@@ -174,8 +181,9 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724894511/onekitty_wqvxej.png',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707422/onekitty_tv9gjh.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331967/Onekitty_ittscw.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790522/Screen_Recording_2024-08-27_at_10.36.09_PM_qfpkre.mov',
     },
@@ -194,8 +202,9 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339366/poka_iz9i5k.png',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707421/pride_nyylhi.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331965/Pride_Of_Kenya_Awards_gprh2v.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791357/Screen_Recording_2024-08-27_at_11.36.59_PM_l00koz.mov',
     },
@@ -214,8 +223,9 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339635/h_h_dkycst.png',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707426/hoteles_inplt0.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331971/Hoteles_Hogares_io1csv.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791170/Screen_Recording_2024-08-27_at_11.34.06_PM_jhxzs0.mov',
     },
@@ -234,8 +244,9 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725338433/mjengo_ijauk9.svg',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707427/mjengo_euhamj.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331963/MjengoSmart_mi5eaa.png',
       video: '',
     },
     {
@@ -253,8 +264,9 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339635/asclogo_hkwlsd.png',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707407/sicklers_oaubcw.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725332162/Save_the_sicklers_organization_vlxqpr.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791838/Screen_Recording_2024-08-27_at_11.39.24_PM_n5lbkj.mov',
     },
@@ -273,8 +285,9 @@ export const DATA = {
           icon: <Icons.globe className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339633/logo_ozz4xw.svg',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707411/farmers_u9nbnd.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331961/Farmers_Master_Class_uw9jyq.png',
       video: '',
     },
     {
@@ -283,7 +296,7 @@ export const DATA = {
       dates: '',
       active: true,
       description:
-        'EDiscover additional projects from my previous portfolio to see a broader range of my work',
+        'Discover additional projects from my previous portfolio to see a broader range of my work',
       technologies: [
         'React',
         'Next.js',
@@ -304,8 +317,9 @@ export const DATA = {
           icon: <Icons.github className='size-3' />,
         },
       ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339856/portfolio_ieefkz.png',
       image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724707400/portfolio_gurn1s.png',
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725332156/Robbievans-ReactDeveloper_dlryhy.png',
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790931/Screen_Recording_2024-08-27_at_10.45.11_PM_vvrsqx.mov',
     },

@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/video-dialog';
 import { PlayCircle } from 'lucide-react';
 import Image from 'next/image';
+import { DATA } from '@/_data/resume';
 
 const VideoDetail = ({
   project,
@@ -27,7 +28,9 @@ const VideoDetail = ({
 }) => {
   return (
     <VideoModalContent>
-      <VideoModalTitle className='text-lg md:text-2xl'>{project.title}</VideoModalTitle>
+      <VideoModalTitle className='text-lg md:text-2xl'>
+        {project.title}
+      </VideoModalTitle>
       <VideoModalDescription className='text-sm'>
         {project.description}
       </VideoModalDescription>
@@ -39,6 +42,8 @@ const VideoDetail = ({
               alt={project.title}
               width={400}
               height={300}
+              blurDataURL={DATA.blurredDataUrl}
+              placeholder='blur'
               className='w-full h-auto aspect-video object-cover'
             />
           </VideoPreview>
