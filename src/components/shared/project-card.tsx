@@ -10,6 +10,7 @@ import ProjectDetailDialog from '../projects/project-detail-dialog';
 import VideoDetail from '../projects/video-detail';
 import { Button } from '../ui/button';
 import { Dialog, DialogOverlay, DialogTrigger } from '../ui/dialog';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 
 const ProjectCard = ({ project }: { project: any }) => {
   const [isClicked, setIsClicked] = useState(false);
@@ -46,8 +47,8 @@ const ProjectCard = ({ project }: { project: any }) => {
 
   const titleVariants = {
     initial: { y: 20, opacity: 0 },
-    hover: { y: -27, opacity: 1, scale:0.95 },
-    clicked:{ y: -27, opacity: 1, scale:0.95 },
+    hover: { y: -27, opacity: 1, scale: 0.95 },
+    clicked: { y: -27, opacity: 1, scale: 0.95 },
   };
 
   return (
@@ -59,7 +60,11 @@ const ProjectCard = ({ project }: { project: any }) => {
       className={cn('overflow-hidden relative group')}
       variants={containerVariants}
     >
-      <motion.div transition={{ duration: 0.5, delay:0.2, ease: 'easeInOut' }} variants={imageVariants} className='relative'>
+      <motion.div
+        transition={{ duration: 0.5, delay: 0.2, ease: 'easeInOut' }}
+        variants={imageVariants}
+        className='relative'
+      >
         <Image
           data-loaded='false'
           onLoad={(event) => {
@@ -73,6 +78,12 @@ const ProjectCard = ({ project }: { project: any }) => {
           height={300}
           className='w-full aspect-video object-cover object-center h-[35dvh] border rounded-xl transition-all duration-200 ease-in-out data-[loaded=false]:animate-pulse data-[loaded=false]:blur-md'
         />
+        <Avatar className='absolute top-4 left-4 w-14 h-14 rounded-full bg-black/50 backdrop-filter shadow-2xl'>
+          <AvatarImage src={project.logo} alt={project.title} className=' shadow-2xl' />
+          <AvatarFallback className='bg-transparent text-black'>
+            {project.title[0]}
+          </AvatarFallback>
+        </Avatar>
       </motion.div>
 
       <motion.div
@@ -105,7 +116,7 @@ const ProjectCard = ({ project }: { project: any }) => {
       </motion.div>
 
       <motion.div
-      transition={{duration:0.2, ease:'easeInOut'}}
+        transition={{ duration: 0.2, ease: 'easeInOut' }}
         variants={titleVariants}
         className='absolute bottom-4 flex items-center left-0 w-full p-4 h-32  mx-auto  text-foreground z-10 bg-gradient-to-b from-transparent  via-background/50 to-[rgba(173,109,244,0.5)] rounded-b-xl justify-center bg-opacity-50 backdrop-blur backdrop-filter'
       >
