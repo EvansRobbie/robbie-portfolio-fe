@@ -13,6 +13,11 @@ import { Dialog, DialogOverlay, DialogTrigger } from '../ui/dialog';
 
 const ProjectCard = ({ project }: { project: any }) => {
   const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
   const containerVariants = {
     initial: {},
     hover: {
@@ -20,6 +25,17 @@ const ProjectCard = ({ project }: { project: any }) => {
         staggerChildren: 0.2, // Stagger time between buttons
       },
     },
+    clicked: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const imageVariants = {
+    initial: { scale: 1, y: 0 },
+    hover: { scale: 0.95, y: -40 },
+    clicked: { scale: 0.95, y: -40 },
   };
 
   const buttonVariants = {
@@ -28,32 +44,40 @@ const ProjectCard = ({ project }: { project: any }) => {
     clicked: { opacity: 1, y: 0 }, // Visible when clicked
   };
 
-  const handleClick = () => {
-    setIsClicked(!isClicked);
+  const titleVariants = {
+    initial: { y: 20, opacity: 0 },
+    hover: { y: -27, opacity: 1, scale:0.95 },
+    clicked:{ y: -27, opacity: 1, scale:0.95 },
   };
 
   return (
-    <div className={cn('overflow-hidden relative ')} onClick={handleClick}>
-      <Image
-        data-loaded='false'
-        onLoad={(event) => {
-          event.currentTarget.setAttribute('data-loaded', 'true');
-        }}
-        placeholder='blur'
-        blurDataURL={DATA.blurredDataUrl}
-        src={project.image}
-        alt={project.title}
-        width={400}
-        height={300}
-        className='w-full aspect-video object-cover object-center h-[35dvh] border rounded-xl transition-all hover:scale-105 duration-200 ease-in-out hover:brightness-50  data-[loaded=false]:animate-pulse data-[loaded=false]:blur-md'
-      />
+    <motion.div
+      initial='initial'
+      animate={isClicked ? 'clicked' : 'initial'}
+      whileHover='hover'
+      onClick={handleClick}
+      className={cn('overflow-hidden relative group')}
+      variants={containerVariants}
+    >
+      <motion.div transition={{ duration: 0.5, delay:0.2, ease: 'easeInOut' }} variants={imageVariants} className='relative'>
+        <Image
+          data-loaded='false'
+          onLoad={(event) => {
+            event.currentTarget.setAttribute('data-loaded', 'true');
+          }}
+          placeholder='blur'
+          blurDataURL={DATA.blurredDataUrl}
+          src={project.image}
+          alt={project.title}
+          width={400}
+          height={300}
+          className='w-full aspect-video object-cover object-center h-[35dvh] border rounded-xl transition-all duration-200 ease-in-out data-[loaded=false]:animate-pulse data-[loaded=false]:blur-md'
+        />
+      </motion.div>
+
       <motion.div
-        initial='initial'
-        animate={isClicked ? 'clicked' : 'initial'}
-        whileHover='hover'
-        whileTap={'hover'}
         variants={containerVariants}
-        className='absolute inset-0 right-6 z-10 flex flex-col items-end gap-2 justify-center'
+        className='absolute inset-0 right-6 z-20 flex flex-col items-end gap-2 justify-center'
       >
         <Dialog>
           <DialogTrigger asChild>
@@ -79,7 +103,15 @@ const ProjectCard = ({ project }: { project: any }) => {
           <VideoDetail project={project} />
         </VideoModal>
       </motion.div>
-    </div>
+
+      <motion.div
+      transition={{duration:0.2, ease:'easeInOut'}}
+        variants={titleVariants}
+        className='absolute bottom-4 flex items-center left-0 w-full p-4 h-32  mx-auto  text-foreground z-10 bg-gradient-to-b from-transparent  via-background/50 to-[rgba(173,109,244,0.5)] rounded-b-xl justify-center bg-opacity-50 backdrop-blur backdrop-filter'
+      >
+        <h3 className='text-lg font-semibold text-center'>{project.title}</h3>
+      </motion.div>
+    </motion.div>
   );
 };
 
