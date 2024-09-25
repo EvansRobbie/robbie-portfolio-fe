@@ -17,6 +17,7 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
+    "@studio-freight/react-lenis": "^0.0.47",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
@@ -34,10 +35,8 @@
     "react-dom": "^18",
     "react-i18next": "^15.0.1",
     "react-icon-cloud": "^4.1.4",
-    "react-tsparticles": "^2.12.2",
     "tailwind-merge": "^2.5.0",
-    "tailwindcss-animate": "^1.0.7",
-    "tsparticles": "^3.5.0"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
