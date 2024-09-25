@@ -4,8 +4,8 @@ import ContactButton from './contact-button';
 
 const Footer = () => {
   return (
-    <footer className='z-50 opacity-100 pb-10 relative px-4'>
-      <div className='flex w-full justify-between'>
+    <footer className='z-50 opacity-100 pb-20 md:pb-10 relative px-4'>
+      <div className='flex w-full justify-between flex-col-reverse md:flex-row gap-4'>
         <div className='flex flex-col-reverse md:flex-row gap-3 items-center justify-between pb-8 mb-'>
           <div className='text-sm text-[#787878]'>
             {`© ${new Date().getFullYear()}. All rights reserved.`}

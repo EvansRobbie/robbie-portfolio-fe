@@ -56,7 +56,7 @@ const ContactButton = () => {
   }
 
   return (
-    <div className='!relative w-[40%] flex justify-end'>
+    <div className='!relative w-full md:w-[40%] flex justify-end z-40'>
       <motion.button
         layoutId='contact-button'
         style={{ borderRadius: '12px' }}
@@ -74,7 +74,7 @@ const ContactButton = () => {
       {isOpen && (
         <motion.div
           layoutId='contact-button'
-          className='absolute inset-0 z-50 -top-60 space-y-4 flex flex-col items-end  bg-background shadow-lg px-4 pt-6 border w-full '
+          className='absolute inset-0 z-50 -top-64 md:-top-60 space-y-4 flex flex-col items-end  bg-background shadow-lg px-4 pt-6 border w-full '
           ref={ref}
           style={{ borderRadius: '12px' }}
         >
@@ -159,6 +159,7 @@ const ContactButton = () => {
                   ></motion.div>
                   <Input
                     placeholder='Email'
+                    type='email'
                     required
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -174,10 +175,10 @@ const ContactButton = () => {
                   type='submit'
                   className={cn(
                     buttonVariants({ variant: 'outline', size: 'lg' }),
-                    '  backdrop-blur justify-end flex h10 max-w-fit min-w-[200px]   '
+                    '  backdrop-blur justify-center flex h10 max-w-fit min-w-[200px]    '
                   )}
                 >
-                  <AnimatePresence mode='popLayout' initial={false}>
+                  <AnimatePresence mode='wait' initial={false}>
                     <motion.span
                       transition={{
                         type: 'spring',
