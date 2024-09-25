@@ -12,6 +12,7 @@ import AnimatedCursor from 'react-animated-cursor';
 import initTranslations from '../i18n';
 import './globals.css';
 import SmoothScrolling from '@/components/hoc/scroll-smooth';
+import Footer from '@/components/shared/footer';
 
 const barlow = Barlow_Semi_Condensed({
   subsets: ['latin'],
@@ -104,6 +105,7 @@ export default async function RootLayout({
                     <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
                     <BackroundParticles options={largeParticles} />
                     {children}
+                    <Footer />
                   </main>
                 </PageAnimatePresence>
                 <Navbar />
