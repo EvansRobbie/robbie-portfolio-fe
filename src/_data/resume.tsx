@@ -272,7 +272,7 @@ export const DATA = {
     },
     {
       title: 'Farmers Master Class',
-      href: 'https://farmers-master-class-fe.vercel.app/',
+      href: 'https://farmersmasterclass.com/',
       dates: 'June 2023 - Present',
       active: true,
       description:
@@ -281,7 +281,7 @@ export const DATA = {
       links: [
         {
           type: 'Website',
-          href: 'https://farmers-master-class-fe.vercel.app/',
+          href: 'https://farmersmasterclass.com/',
           icon: <Icons.globe className='size-3' />,
         },
       ],
@@ -289,6 +289,33 @@ export const DATA = {
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331961/Farmers_Master_Class_uw9jyq.png',
       video: '',
+    },
+    {
+      title: 'Eleven Motors',
+      href: 'https://elevenmotorske.com/',
+      dates: 'June 2023 - Present',
+      active: true,
+      description:
+        'Eleven Motors is a modern car dealership website built with Next.js, styled using Tailwind CSS, and enhanced with Framer Motion for smooth animations and interactive experiences. It offers users a seamless, responsive platform to explore premium vehicles and services, providing an optimized browsing experience with fast performance and engaging design elements.',
+      technologies: [
+        'Next.js',
+        'Typescript',
+        'TailwindCSS',
+        'Shadcn UI',
+        'Framer Motion',
+      ],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://elevenmotorske.com/',
+          icon: <Icons.globe className='size-3' />,
+        },
+      ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1727280565/eleven-logo_gbaejs.svg',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1727280462/Eleven_Motors_Elevating_xz4can.png',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1727284609/Screen_Recording_2024-09-25_at_8.12.58_PM_aq8pu2.mov',
     },
     {
       title: 'More Projects - portfolio',
