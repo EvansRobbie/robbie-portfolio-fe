@@ -30,7 +30,6 @@ const ContactButton = () => {
         },
         body: JSON.stringify({ email, message }),
       });
-      console.log(res);
       if (!res.ok) {
         throw new Error('Failed to send message');
       }
@@ -59,7 +58,7 @@ const ContactButton = () => {
     <div className='!relative w-full md:w-[40%] flex justify-end z-40'>
       <motion.button
         layoutId='contact-button'
-        style={{ borderRadius: '12px' }}
+        style={{ borderRadius: '8px' }}
         className={cn(
           buttonVariants({ variant: 'outline', size: 'lg' }),
           '  backdrop-blur justify-end flex !relative    '
