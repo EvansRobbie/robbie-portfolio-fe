@@ -1,16 +1,17 @@
+import { largeParticles } from '@/_data/particle-options';
+import { DATA } from '@/_data/resume';
+import { ThemeProvider } from '@/_providers/theme-provider';
 import TranslationsProvider from '@/_providers/translation-provider';
+import PageAnimatePresence from '@/components/hoc/page-animated-presence';
+import Navbar from '@/components/shared/navbar';
+import BackroundParticles from '@/components/ui/particles';
+import { TooltipProvider } from '@/components/ui/tooltip';
 import type { Metadata } from 'next';
 import { Barlow_Semi_Condensed } from 'next/font/google';
+import AnimatedCursor from 'react-animated-cursor';
 import initTranslations from '../i18n';
 import './globals.css';
-import { ThemeProvider } from '@/_providers/theme-provider';
-import Navbar from '@/components/shared/navbar';
-import { TooltipProvider } from '@/components/ui/tooltip';
-import AnimatedCursor from 'react-animated-cursor';
-import PageAnimatePresence from '@/components/hoc/page-animated-presence';
-import BackroundParticles from '@/components/ui/particles';
-import { largeParticles, smallParticles } from '@/_data/particle-options';
-import { DATA } from '@/_data/resume';
+import SmoothScrolling from '@/components/hoc/scroll-smooth';
 
 const barlow = Barlow_Semi_Condensed({
   subsets: ['latin'],
@@ -98,30 +99,32 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={barlow.className}>
-        <TranslationsProvider
-          namespaces={namespaces}
-          locale={locale}
-          resources={resources}
-        >
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='system'
-            enableSystem
-            disableTransitionOnChange
+        <SmoothScrolling>
+          <TranslationsProvider
+            namespaces={namespaces}
+            locale={locale}
+            resources={resources}
           >
-            <AnimatedCursor />
-            <TooltipProvider delayDuration={0}>
-              <PageAnimatePresence>
-                <main className='min-h-screen h-full  w-full absolute top-0 -z-10 py-8'>
-                  <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
-                  <BackroundParticles options={largeParticles} />
-                  {children}
-                </main>
-              </PageAnimatePresence>
-              <Navbar />
-            </TooltipProvider>
-          </ThemeProvider>
-        </TranslationsProvider>
+            <ThemeProvider
+              attribute='class'
+              defaultTheme='system'
+              enableSystem
+              disableTransitionOnChange
+            >
+              <AnimatedCursor />
+              <TooltipProvider delayDuration={0}>
+                <PageAnimatePresence>
+                  <main className='min-h-screen h-full  w-full absolute top-0 -z-10 py-8'>
+                    <div className='absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]'></div>
+                    <BackroundParticles options={largeParticles} />
+                    {children}
+                  </main>
+                </PageAnimatePresence>
+                <Navbar />
+              </TooltipProvider>
+            </ThemeProvider>
+          </TranslationsProvider>
+        </SmoothScrolling>
       </body>
     </html>
   );
