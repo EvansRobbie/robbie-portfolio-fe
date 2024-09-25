@@ -55,7 +55,7 @@ const ContactButton = () => {
   }
 
   return (
-    <div className='!relative w-full md:w-[40%] flex justify-end z-40'>
+    <div className='!relative w-full md:w-[40%] flex justify-end '>
       <motion.button
         layoutId='contact-button'
         style={{ borderRadius: '8px' }}
