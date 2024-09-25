@@ -10,6 +10,14 @@ const sitemap = async () => {
       url: `${DATA.url}/blogs`,
       lastModified: new Date(),
     },
+    {
+      url: `${DATA.url}/#projects`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${DATA.url}/#contact`,
+      lastModified: new Date(),
+    },
   ];
 };
 
