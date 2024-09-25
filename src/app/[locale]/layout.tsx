@@ -29,21 +29,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  keywords: [
-    'Frontend Developer',
-    'React Developer',
-    'Next.js',
-    'Tailwind',
-    'JavaScript',
-    'HTML',
-    'CSS',
-    'Typescript',
-    'Shadcn UI',
-    'Material UI',
-    'Vercel',
-    'Framer Motion',
-    'Chakra UI',
-  ],
+  keywords: DATA.seoKeywords,
   openGraph: {
     title: `${DATA.name}`,
     description: DATA.description,

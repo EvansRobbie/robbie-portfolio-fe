@@ -2,7 +2,7 @@ import { Icons } from '@/components/shared/icons';
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from 'lucide-react';
 export const DATA = {
   name: 'Evanrobby Macharia',
-  url: 'https://robbie-portfolio-fe.vercel.app',
+  url: 'https://www.evanrobbymacharia.com/',
   blurredDataUrl:
     'data:image/webp;base64,UklGRhwDAABXRUJQVlA4WAoAAAAgAAAAMgEApwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggLgEAAPATAJ0BKjMBqAA+7XaxVimnJCOgKOEwHYlpbt+uGh5p7GBJfIAn82ELd8SQ/ItNSD+OBNhFSMglhvKQmp7chXEF8YQg8aby04ZzgaIT+GOZuGm2MLJSZ8GKQtha9n4MtIVRgQs2DKzBR3b6VQr2NjF0Y7WgHkS/cl6BBQYtp0xYxsDYOzZaGMsb2qGLaEt5Xbc9ChB9m7YyMJIufhS7x1eLUxCq8pptgAD+73O/82ZP5XHgNe2X+kDajHI9LCyMn4P45SlcilCiKf1d47mYSV747KS3wO0oZ49xT6H0io9qxqMoMO+39jlAXju0KQgFWs6gsGOdZ/LLiOHk/VlkLHHnsUBi4Gom9TrnOamWNG1hluFzzUIkV00iyv1suCqCKhsSK9IwiLhQAuL0AAAA',
   description:
@@ -272,7 +272,7 @@ export const DATA = {
     },
     {
       title: 'Farmers Master Class',
-      href: 'https://farmers-master-class-fe.vercel.app/',
+      href: 'https://farmersmasterclass.com/',
       dates: 'June 2023 - Present',
       active: true,
       description:
@@ -281,7 +281,7 @@ export const DATA = {
       links: [
         {
           type: 'Website',
-          href: 'https://farmers-master-class-fe.vercel.app/',
+          href: 'https://farmersmasterclass.com/',
           icon: <Icons.globe className='size-3' />,
         },
       ],
@@ -289,6 +289,33 @@ export const DATA = {
       image:
         'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331961/Farmers_Master_Class_uw9jyq.png',
       video: '',
+    },
+    {
+      title: 'Eleven Motors',
+      href: 'https://elevenmotorske.com/',
+      dates: 'June 2023 - Present',
+      active: true,
+      description:
+        'Eleven Motors is a modern car dealership website built with Next.js, styled using Tailwind CSS, and enhanced with Framer Motion for smooth animations and interactive experiences. It offers users a seamless, responsive platform to explore premium vehicles and services, providing an optimized browsing experience with fast performance and engaging design elements.',
+      technologies: [
+        'Next.js',
+        'Typescript',
+        'TailwindCSS',
+        'Shadcn UI',
+        'Framer Motion',
+      ],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://elevenmotorske.com/',
+          icon: <Icons.globe className='size-3' />,
+        },
+      ],
+      logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1727280565/eleven-logo_gbaejs.svg',
+      image:
+        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1727280462/Eleven_Motors_Elevating_xz4can.png',
+      video:
+        'https://res.cloudinary.com/dqg83cf9f/video/upload/v1727284609/Screen_Recording_2024-09-25_at_8.12.58_PM_aq8pu2.mov',
     },
     {
       title: 'More Projects - portfolio',
@@ -323,5 +350,82 @@ export const DATA = {
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790931/Screen_Recording_2024-08-27_at_10.45.11_PM_vvrsqx.mov',
     },
+  ],
+  seoKeywords: [
+    'Evan Macharia',
+    'Evanrobbymacharia',
+    'Robbievans',
+    "Robbie's Portfolio",
+    'Evanrobby Macharia',
+    'Portfolio',
+    'Web Developer',
+    'Frontend Developer',
+    'Evanrobbie Macharia Portfolio',
+    'github',
+    'robbievans',
+    // General Keywords
+    'Frontend Developer Portfolio',
+    'Web Developer Portfolio',
+    'JavaScript Developer',
+    'React Developer Portfolio',
+    'Web Development Projects',
+    'Freelance Frontend Developer',
+    'Professional Web Development',
+    'Responsive Web Design',
+    'Modern Web Design',
+
+    // Technical Skills Keywords
+    'JavaScript Developer',
+    'React.js Developer',
+    'Next.js Portfolio',
+    'Tailwind CSS Developer',
+    'Frontend Development with Tailwind',
+    'Custom Web Animations',
+    'Framer Motion',
+    'Shadcn UI',
+    'SEO-friendly Websites',
+    'Mobile-First Design',
+    'Web Performance Optimization',
+
+    // SEO-Specific Keywords
+    'SEO-Optimized Websites',
+    'Fast-loading Websites',
+    'Google PageSpeed Optimization',
+    'Accessible Web Design',
+    'Schema Markup for SEO',
+    'Technical SEO for Web Development',
+    'Search Engine Optimization in Web Projects',
+
+    // Tools & Technologies Keywords
+    'jsPDF for Web Projects',
+    'Zod for Form Validation',
+    'React Query Infinite Scroll',
+    'Formik Forms with Validation',
+    'Modern UI Libraries for Web Development',
+    'Custom Form Handling with Formik & Yup',
+    'Managing URL Parameters in Next.js',
+    'Intersection Observer API in React',
+    'Global State Management in React',
+
+    // Project-Specific Keywords
+    'Netflix Clone Project',
+    'Airbnb Clone Project',
+    'Kai and Karo',
+    'Eleven Motors',
+    'Bridge lab',
+    'Farmers Master Class',
+    'Hoteles & Hogares',
+    'Onekitty',
+    'Mjengosmart',
+    'pride awards',
+    'Frontend Developer Case Studies',
+    'Showcase of Web Development Projects',
+
+    // Freelance & Experience Keywords
+    'Freelance Web Developer Services',
+    'Hiring a Frontend Developer',
+    'Full-Stack Developer Collaboration',
+    'Web Design and SEO Expert',
+    'Commercial Web Projects Developer',
   ],
 };
