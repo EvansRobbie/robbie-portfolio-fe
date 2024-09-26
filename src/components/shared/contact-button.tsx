@@ -46,9 +46,9 @@ const ContactButton = () => {
         setFormState('error');
       }, 1500);
 
-      // setTimeout(() => {
-      //   setIsOpen(false);
-      // }, 3300);
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 3500);
     } finally {
       setFormState('idle');
     }
