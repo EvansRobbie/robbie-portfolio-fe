@@ -46,16 +46,16 @@ const ContactButton = () => {
         setFormState('error');
       }, 1500);
 
-      // setTimeout(() => {
-      //   setIsOpen(false);
-      // }, 3300);
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 3500);
     } finally {
       setFormState('idle');
     }
   }
 
   return (
-    <div className='!relative w-full md:w-[40%] flex justify-end z-40'>
+    <div className='!relative w-full md:w-[40%] flex justify-end '>
       <motion.button
         layoutId='contact-button'
         style={{ borderRadius: '8px' }}
@@ -131,7 +131,9 @@ const ContactButton = () => {
                 {formState === 'success' && (
                   <>
                     <h3>Message received!</h3>
-                    <p>Thanks for helping me in any way.</p>
+                    <p>
+                      Thanks for contacting me, I&apos;ll get back to you soon.
+                    </p>
                   </>
                 )}
                 {formState === 'error' && (
@@ -174,7 +176,7 @@ const ContactButton = () => {
                   type='submit'
                   className={cn(
                     buttonVariants({ variant: 'outline', size: 'lg' }),
-                    '  backdrop-blur justify-center flex h10 max-w-fit min-w-[200px]    '
+                    '  backdrop-blur bg-black/30 dark:bg-transparent justify-center flex h10 max-w-fit min-w-[200px]    '
                   )}
                 >
                   <AnimatePresence mode='wait' initial={false}>
@@ -192,7 +194,9 @@ const ContactButton = () => {
                       {formState === 'loading' ? (
                         <Spinner size={14} color='rgba(255, 255, 255, 0.65)' />
                       ) : (
-                        <span>Send me a message</span>
+                        <span className='text-foreground-primary'>
+                          Send me a message
+                        </span>
                       )}
                     </motion.span>
                   </AnimatePresence>
