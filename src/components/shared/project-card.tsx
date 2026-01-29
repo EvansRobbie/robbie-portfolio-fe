@@ -79,17 +79,12 @@ const ProjectCard = ({ project }: { project: any }) => {
         className='relative'
       >
         <Image
-          data-loaded='false'
-          onLoad={(event) => {
-            event.currentTarget.setAttribute('data-loaded', 'true');
-          }}
           placeholder='blur'
-          blurDataURL={DATA.blurredDataUrl}
           src={project.image}
           alt={project.title}
           width={400}
           height={300}
-          className='w-full aspect-video object-cover object-center h-[35dvh] border rounded-xl transition-all duration-200 ease-in-out data-[loaded=false]:animate-pulse data-[loaded=false]:blur-md'
+          className='w-full aspect-video object-cover object-center h-[35dvh] border rounded-xl transition-all duration-200 ease-in-out'
         />
         <Avatar className='absolute top-4 left-4 w-14 h-14 rounded-full bg-black/50 backdrop-filter shadow-2xl'>
           <AvatarImage
