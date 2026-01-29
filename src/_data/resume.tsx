@@ -1,4 +1,12 @@
 import { Icons } from '@/components/shared/icons';
+import kaiAndKaroImage from '../../public/kai-and-karo.png';
+import bridgeLabImage from '../../public/bridge-lab.png';
+import oneKittyImage from '../../public/one-kitty.png';
+import prideAwardsImage from '../../public/pride-awards.png';
+import mjengoSmartImage from '../../public/mjengo-smart.png';
+import saveTheSicklersImage from '../../public/save-the-sicklers.png';
+import farmersMasterClassImage from '../../public/farmers-master-class.png';
+import oldPortfolioImage from '../../public/old-portfolio.png';
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from 'lucide-react';
 export const DATA = {
   name: 'Evanrobby Macharia',
@@ -140,8 +148,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339633/kai-logo_ov1pry.svg',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331952/Kai_Karo_epyi1q.png',
+      image: kaiAndKaroImage,
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724789639/Screen_Recording_2024-08-27_at_10.43.12_PM_zchetj.mov',
     },
@@ -161,8 +168,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339634/bridgelab-logo_dpz4in.webp',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331955/Bridge_Lab_xjsbet.png',
+      image: bridgeLabImage,
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790376/Screen_Recording_2024-08-27_at_10.37.24_PM_nwi2rn.mov',
     },
@@ -182,8 +188,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1724894511/onekitty_wqvxej.png',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331967/Onekitty_ittscw.png',
+      image: oneKittyImage,
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790522/Screen_Recording_2024-08-27_at_10.36.09_PM_qfpkre.mov',
     },
@@ -203,8 +208,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339366/poka_iz9i5k.png',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331965/Pride_Of_Kenya_Awards_gprh2v.png',
+      image: prideAwardsImage,
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791357/Screen_Recording_2024-08-27_at_11.36.59_PM_l00koz.mov',
     },
@@ -245,8 +249,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725338433/mjengo_ijauk9.svg',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331963/MjengoSmart_mi5eaa.png',
+      image: mjengoSmartImage,
       video: '',
     },
     {
@@ -265,8 +268,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339635/asclogo_hkwlsd.png',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725332162/Save_the_sicklers_organization_vlxqpr.png',
+      image: saveTheSicklersImage,
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791838/Screen_Recording_2024-08-27_at_11.39.24_PM_n5lbkj.mov',
     },
@@ -286,8 +288,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339633/logo_ozz4xw.svg',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331961/Farmers_Master_Class_uw9jyq.png',
+      image: farmersMasterClassImage,
       video: '',
     },
     {
@@ -345,8 +346,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339856/portfolio_ieefkz.png',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725332156/Robbievans-ReactDeveloper_dlryhy.png',
+      image: oldPortfolioImage,
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724790931/Screen_Recording_2024-08-27_at_10.45.11_PM_vvrsqx.mov',
     },
