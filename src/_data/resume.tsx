@@ -6,6 +6,7 @@ import prideAwardsImage from '../../public/pride-awards.png';
 import mjengoSmartImage from '../../public/mjengo-smart.png';
 import saveTheSicklersImage from '../../public/save-the-sicklers.png';
 import farmersMasterClassImage from '../../public/farmers-master-class.png';
+import elevenMotorsImage from '../../public/eleven-motors.png';
 import oldPortfolioImage from '../../public/old-portfolio.png';
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from 'lucide-react';
 export const DATA = {
@@ -228,8 +229,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725339635/h_h_dkycst.png',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1725331971/Hoteles_Hogares_io1csv.png',
+      image: prideAwardsImage,
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1724791170/Screen_Recording_2024-08-27_at_11.34.06_PM_jhxzs0.mov',
     },
@@ -313,8 +313,7 @@ export const DATA = {
         },
       ],
       logo: 'https://res.cloudinary.com/dqg83cf9f/image/upload/v1727280565/eleven-logo_gbaejs.svg',
-      image:
-        'https://res.cloudinary.com/dqg83cf9f/image/upload/v1727280462/Eleven_Motors_Elevating_xz4can.png',
+      image: elevenMotorsImage,
       video:
         'https://res.cloudinary.com/dqg83cf9f/video/upload/v1727284609/Screen_Recording_2024-09-25_at_8.12.58_PM_aq8pu2.mov',
     },
